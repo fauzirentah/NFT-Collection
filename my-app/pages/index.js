@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import { abi, NFT_CONTRACT_ADDRESS } from "../constants";
 import styles from '../styles/Home.module.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Home() {
   // walletConnected keep track of whether the user's wallet is connected or not
@@ -337,8 +338,8 @@ export default function Home() {
       return (
         <div>
           <div className={styles.description}>
-            Presale has started!!! If your address is whitelisted, Mint a
-            Crypto Dev 🥳
+            Presale has started!!! If your address is whitelisted, Mint your
+            NFT art 🥳
           </div>
           <button className={styles.button} onClick={presaleMint}>
             Presale Mint 🚀
@@ -365,7 +366,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
-        <div>
+        <div className={styles.sub}>
           <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
           <div className={styles.description}>
             Its an NFT collection for developers in Crypto.
@@ -376,12 +377,12 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./cryptodevs/0.svg" />
+          <img className={styles.image} src="./cryptodevs/00.svg" />
         </div>
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by j1r3n
+        LFG 🚀🚀🚀 by j1r3n
       </footer>
     </div>
   );
